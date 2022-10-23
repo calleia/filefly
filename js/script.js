@@ -7,7 +7,7 @@ async function digestMessage(message) {
     return hashHex;
 }
 
-window.onclick = async function(e) {
+text.oninput = async function(e) {
     var object = new Object();
     object.hash = await digestMessage(text.value);
     object.value = text.value;
