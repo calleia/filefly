@@ -1,4 +1,8 @@
 window.onclick = function(e) {
-    qrcode.innerHTML = "<code>" + text.value + "</code>";
+    var object = new Object();
+    object.value = text.value;
+
+    var jsonString = JSON.stringify(object);
+    qrcode.innerHTML = jsonString;
 }
 
