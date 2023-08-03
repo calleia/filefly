@@ -11,8 +11,12 @@ text.oninput = async function(e) {
     var object = new Object();
     object.hash = await digestMessage(text.value);
     object.value = text.value;
-
+    
     var jsonString = JSON.stringify(object);
-    qrcode.innerHTML = jsonString;
+    code.innerHTML = jsonString;
+
+    qrcode.clear();
+    qrcode.makeCode(jsonString);
 }
 
+var qrcode = new QRCode(document.getElementById("qrcode"));
