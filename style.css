@@ -1,0 +1,13 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+#qrcode {
+    border: 5px solid crimson;
+    border-radius: 20px;
+    padding: 20px;
+}
