@@ -6,6 +6,11 @@ body {
     height: 100vh;
 }
 
+input {
+    padding: 5px;
+    width: 300px;
+}
+
 #qrcode {
     border: 5px solid crimson;
     border-radius: 20px;
